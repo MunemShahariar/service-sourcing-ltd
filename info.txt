@@ -1,0 +1,11 @@
+===========================================================
+Name: Service Sourcing LTD
+FB: https://www.facebook.com/ServiceSourcingLtd/
+===========================================================
+
+color ->
+    #333333 (black)
+    #0366d6 (blue)
+    #22863a (Green)
+
+https://freedesignfile.com/upload/2019/11/Observing-data-trend-illustration-vector.jpg

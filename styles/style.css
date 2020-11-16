@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family:'Roboto', sans-serif;
+    color: #333333;
+}
+
+/*======================================================================================
+    PRIMARY STYLING
+========================================================================================*/
+h2{ 
+    font-weight: 900;
+    font-size: 48px;
+}
+
+@media(max-width: 500px) {
+    h2{ 
+        font-weight: 900;
+        font-size: 36px;
+    }
+}
+
+.btn {
+    border: 1px solid #333333;
+    border-radius: 0%;
+    font-size: 14px;
+    
+}
+
+
+/* =====================
+    NAVBAR
+====================== */
+
+.navbar {
+    border-bottom: 1px solid rgba(51, 51, 51,0.2);
+    width: 100%;   
+  }
+  
+  .nav-item a {
+    font-weight: 900;
+    color: #333333!important;
+    text-transform: uppercase;
+  }
+  
+  .nav-item a:hover {
+    font-weight: 900;
+    color: #0366d6!important; 
+    transition: 400ms;   
+   
+  }
+
+
+/* =====================
+   HERO 
+====================== */
+
+#hero {
+    height: 88vh; 
+    background-image: linear-gradient(to right, rgba(51, 51, 51, 0.7), rgba(34, 134, 58,0.5) ),url(/img/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-content h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 72px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+
+
+/* =====================
+   Feature
+====================== */
+
+#feature{
+    height: auto;
+    padding: 60px 0px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.feature-content img {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.feature-content h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #22863a;
+    padding-top: 10px;
+    text-align: center;   
+}
+
+.feature-content p {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;   
+}
+
+
+/* =====================
+   About
+====================== */
+#about{
+    padding: 100px 0px;
+    background-color: #f6f6f6;
+}
+
+.our-story h2{
+    font-size: 48px;    
+}
+
+.our-story p{
+    font-size: 18px;
+    font-weight: 300;  
+   
+}
+.why-choose-us h2 {
+    font-size: 48px;    
+}
+.why-choose-us p{
+    font-size: 18px;    
+    font-weight: 300;
+}
+
+/* =====================
+  Recent Project
+====================== */
+#recent-project {
+    padding: 100px 0px;
+}
