@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">    
     <link rel="stylesheet" href="styles/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
     <title>Service Sourcing LTD</title>
 </head>
 <body>
       
   <!-- ======= Header ======= -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#">
             <img src="/img/logo.png" width="120" class="d-inline-block align-top" alt="Service Sourcing LTD" loading="lazy">
@@ -28,13 +31,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>               
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>               
             </ul>
         </div>
@@ -45,50 +48,36 @@
   <!--================ HERO ================= -->
 
   <section id="hero">  
-    <div class="container hero-content">     
-        <h2> Welcome </h2>
+    <div class="container ">   
+        <div class="hero-content">
+            <h2> Your Trusted Partner in <strong> your innovating business </strong> </h2>
+        </div>
     </div>
   </section>
 
 
-<!--================ Features ================= -->
+<!-- ================ Features ================= -->
   <section id="feature">
     <div class="container">
         <div class="row"> 
             <div class="col-md-3 feature-content ">
                 <img src="/img/dm.svg" class="d-block" alt="">
-                <h2>Digital Marketing</h2>
-                <p> 
-                    Interactively scale scalable networks rather than user-centric technologies. Seamlessly build compelling mindshare and cost 
-                    effective best practices.
-                </p>                
+                <h2>Digital Marketing</h2>                
             </div>
 
-            <div class="col-md-3 feature-content ">
+            <div class="col-md-3 feature-content" >
                 <img src="/img/editing.svg" class="d-block" alt="">
-                <h2>Image Post Processing</h2>
-                <p> 
-                    Interactively scale scalable networks rather than user-centric technologies. Seamlessly build compelling mindshare and cost 
-                    effective best practices.
-                </p>                
+                <h2>Image Processing</h2>                 
             </div>
 
             <div class="col-md-3 feature-content ">
                 <img src="/img/brand-design.svg" class="d-block" alt="">
-                <h2>Branding and Design</h2>
-                <p> 
-                    Interactively scale scalable networks rather than user-centric technologies. Seamlessly build compelling mindshare and cost 
-                    effective best practices.
-                </p>                
+                <h2>Branding and Design</h2>               
             </div>
 
             <div class="col-md-3 feature-content ">
                 <img src="/img/web-dev.svg" class="d-block" alt="">
                 <h2>Web Development</h2>
-                <p> 
-                    Interactively scale scalable networks rather than user-centric technologies. Seamlessly build compelling mindshare and cost 
-                    effective best practices.
-                </p>                
             </div>
           
         </div>
@@ -138,23 +127,198 @@
     </div>
   </section>
 
+<!--================ Services ================= -->
+<section id="services">
+    <div class="container">
+        <h2 class="text-center"> Services </h2>
 
-<!--================ Recent Projects ================= -->
-<section id="recent-project">    
-  
+        <div class="each-services ">
+            <div class="row d-flex align-items-center" >            
+                <div class="col-md-5">
+                    <img src="/img/service-dm.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3> Digital Marketing </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iure fugit beatae consectetur unde perspiciatis, 
+                        suscipit nihil amet impedit itaque ea velit illo excepturi. Sint ipsam magnam rerum culpa accusamus?
+                    </p>
+                </div>            
+            </div>
+        </div>    
+
+        <div class="each-services">
+            <div class="row d-flex align-items-center">   
+                <div class="col-md-6 text-right">
+                    <h3>Image Post Processing</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iure fugit beatae consectetur unde perspiciatis, 
+                        suscipit nihil amet impedit itaque ea velit illo excepturi. Sint ipsam magnam rerum culpa accusamus?
+                    </p>
+                </div>         
+                <div class="col-md-5">
+                    <img src="/img/service-image-retouch.jpg" class="img-fluid" alt="">
+                </div>
+                           
+            </div>
+        </div>  
+        
+        <div class="each-services">
+            <div class="row d-flex align-items-center">   
+                       
+                <div class="col-md-6">
+                    <img src="/img/service-brand.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3>Branding & Design </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iure fugit beatae consectetur unde perspiciatis, 
+                        suscipit nihil amet impedit itaque ea velit illo excepturi. Sint ipsam magnam rerum culpa accusamus?
+                    </p>
+                </div>
+                           
+            </div>
+        </div> 
+
+        <div class="each-services">
+            <div class="row d-flex align-items-center">   
+                <div class="col-md-6 text-right">
+                    <h3>Web Development</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iure fugit beatae consectetur unde perspiciatis, 
+                        suscipit nihil amet impedit itaque ea velit illo excepturi. Sint ipsam magnam rerum culpa accusamus?
+                    </p>
+                </div>         
+                <div class="col-md-5">
+                    <img src="/img/service-web.jpg" class="img-fluid" alt="">
+                </div>
+                           
+            </div>
+        </div>
 
 
-   
+
+    </div>
 </section>
 
 
+<!--================ Recent Projects ================= -->
+<section id="recent-project">  
+    <h2 class="text-center mb-5"> Recent Projects</h2>  
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card">
+                <div class="card">
+                    <img class="card-img-top" src="/img/card-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project title</h5>  
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
 
 
+<section id="contact">
+    <h2 class="text-center mb-3">Contact us</h2>
+    <div class="containter">
+        <div>            
+           <div class="address">            
+                <i class="fas fa-map-marker-alt"></i>
+                211B Baker Street <br>
+                Dhaka, Bangladesh
+           </div>
+           <div class="address">            
+                <i class="fas fa-envelope"></i>
+                email@email.com
+           </div>
+           <div class="address">            
+                <i class="fas fa-phone"></i>
+                +88-0123456789
+           </div>
+        </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">            
+            </iframe>    
+        </div>       
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container">
+        <p> Copyright &copy; 2020 by <strong>Service Solutions LTD</strong>  </p>
+    </div>
+</footer>
 
 
   <script src="lib/jquery.min.js"></script>  
   <script src="lib/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/b0bb6bfcb9.js" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
 
 
 

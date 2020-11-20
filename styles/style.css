@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 html,body{
     margin: 0px;
@@ -6,6 +6,7 @@ html,body{
     background-color: #ffffff;
     font-family:'Roboto', sans-serif;
     color: #333333;
+    scroll-behavior: smooth;
 }
 
 /*======================================================================================
@@ -14,6 +15,7 @@ html,body{
 h2{ 
     font-weight: 900;
     font-size: 48px;
+    color: #0366d6;
 }
 
 @media(max-width: 500px) {
@@ -49,8 +51,7 @@ h2{
   .nav-item a:hover {
     font-weight: 900;
     color: #0366d6!important; 
-    transition: 400ms;   
-   
+    transition: 400ms;      
   }
 
 
@@ -59,55 +60,92 @@ h2{
 ====================== */
 
 #hero {
-    height: 88vh; 
-    background-image: linear-gradient(to right, rgba(51, 51, 51, 0.7), rgba(34, 134, 58,0.5) ),url(/img/hero.jpg);
+    height: 90vh; 
+    background-image: linear-gradient(45deg,  rgba(0, 0, 0, 0.8) ,rgba(0, 0, 0, 0.5)),url(/img/hero.jpg);
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    
 }
 
-.hero-content h2 {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 72px;
-    position: absolute;
+.hero-content{
+    width: 100%;
+    position: absolute;   
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    z-index: 999;
+    text-align: center;
+    
 }
-
-
-
+.hero-content h2{
+    color: #fff;
+    font-weight: 100;
+}
+.hero-content h2 strong {
+    font-weight: 900;
+}
 /* =====================
-   Feature
+    Features
 ====================== */
-
 #feature{
     height: auto;
     padding: 60px 0px;
-    background-color: #ffffff;
     color: #333333;
+   
+}
+
+.feature-content{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-content img {
-    width: 80px;
+    width: 60px;
     margin: 0 auto;
 }
 
 .feature-content h2 {
     font-size: 24px;
-    font-weight: 400;
-    color: #22863a;
-    padding-top: 10px;
-    text-align: center;   
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    padding: 10px;   
 }
 
 .feature-content p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
-    text-align: justify;   
+    color: #333333;
+    text-align: justify;
 }
 
+@media(max-width: 800px) {
+    .feature-content{
+        display: flex;        
+        flex-direction: column;
+        border-left: none!important;
+    }
+    .feature-content img {
+        width: 60px;
+        margin: 0 auto;
+    }
+    
+    .feature-content h2 {
+        font-size: 26px;
+        font-weight: 900;
+        color: #0366d6;
+        padding-top: 10px;
+        text-align: center;   
+    }
+    
+    .feature-content p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #333333;
+        text-align: justify;        
+    }
+}
 
 /* =====================
    About
@@ -134,9 +172,122 @@ h2{
     font-weight: 300;
 }
 
+
+/* =====================
+  Services
+====================== */
+
+#services{
+    padding: 100px 0px;
+    background-color: #ffffff;
+}
+
+.each-services{
+    margin-top:60px;   
+}
+
+.each-services img {
+    width: auto;   
+}
+
+.each-services h3{
+    font-size: 36px;
+    font-weight:300;
+    color: #22863a;
+}
+
+.each-services p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+}
+
+@media (max-width:800px) {   
+    .each-services{
+        margin-top:30px;  
+        border: 1px solid #3333332e;
+        border-radius: 10px;
+        padding: 12px; 
+    }
+    .each-services h3{
+        font-size: 32px;
+        font-weight: 300;
+        color: #22863a;
+        padding-top:20px; 
+        text-align: center;
+    }
+    
+    .each-services p{
+        font-size: 16px;
+        font-weight: 300;
+        color: #333333;
+        text-align: justify;
+    }
+}
+
 /* =====================
   Recent Project
 ====================== */
 #recent-project {
     padding: 100px 0px;
+    background-color: #f6f6f6;
+}
+.card:hover{
+    box-shadow: 0px 5px 20px 1px rgba(51,51,51,0.3)!important;
+    transition: 300ms;
+}
+.card img {
+    height: 250px!important;
+}
+
+.project-card{
+    padding-bottom: 30px;
+}
+
+
+.card-img-top {
+    padding: 0px!important;
+}
+.card-body{
+    padding: 10px 20px!important;
+}
+
+/* =====================
+  Contact
+====================== */
+
+#contact{
+    padding: 100px 0px;
+}
+
+.address {
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+}
+.address ion-ico {
+    font-size: 22px;
+}
+
+.mapouter{
+    padding-top:30px;
+    position:relative;
+    text-align:right;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;    
+}
+
+footer{
+    background-color: #333333;
+    color: #f6f6f6;
+    padding: 20px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
 }
