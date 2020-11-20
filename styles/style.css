@@ -79,7 +79,9 @@ h2{
 }
 .hero-content h2{
     color: #fff;
-    font-weight: 100;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 42px;
 }
 .hero-content h2 strong {
     font-weight: 900;
